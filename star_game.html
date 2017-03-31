@@ -1,0 +1,37 @@
+﻿<!doctype html>
+<html>
+<head>
+    <title>CptS 483</title>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
+
+        <script type="text/javascript" src="js/game/ScreenWidget.js"></script>
+        <script type="text/javascript" src="js/game/Star.js"></script>
+        <script type="text/javascript" src="js/game/SpaceShip.js"></script>
+        <script type="text/javascript" src="js/game/StarGame.js"></script>
+        <script type="text/javascript" src="js/game/EnemyShip.js"></script>
+        <script type="text/javascript" src="js/game/Bullet.js"></script>
+        <script type="text/javascript" src="js/game/Sprite.js"></script>
+        </head>
+<body id="body">
+    <embed src="images/8bitGangnam.mp3" sutostart ="true" loop="true" hidden="true"/>
+<script>
+    $(document).ready(function(){
+        var game = new StarGame(document.getElementById("canvas"),
+        "images/ships.png",
+        "images/enemy12.png",
+        "images/bullet3.gif",
+        "images/bullet2.png",
+        "images/explosion_anim.png",
+        "images/displayBullet.png",
+        "images/rageHeart.png",
+        "images/score-logo.png"
+        );
+        game.begin();
+    });
+</script>
+<canvas id="canvas" width="800" height="700" tabindex="1">
+
+</canvas>
+</body>
+</html>
